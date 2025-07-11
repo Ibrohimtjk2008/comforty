@@ -18,9 +18,9 @@ export default function Our_Products() {
     <>
       <div className="container mx-auto">
         <div className="w-full">
-          <p className="text-5xl text-center">Our Products</p>
+          <p className="text-3xl md:text-5xl text-center">Our Products</p>
           <div className="w-full">
-            <ol className="flex gap-3 text-xl items-center justify-center py-3">
+            <ol className="flex-col flex md:flex-row gap-3 text-xl items-center justify-center py-3">
               <li>
                 <Link href={"#"}>All</Link>
               </li>
@@ -39,7 +39,7 @@ export default function Our_Products() {
             </ol>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col items-center md:flex-row justify-between">
           <ProductCard
             id={1}
             image={image1}
@@ -69,7 +69,7 @@ export default function Our_Products() {
             state={"Naw"}
           ></ProductCard>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col items-center md:flex-row justify-between">
           <ProductCard
             id={5}
             image={image5}

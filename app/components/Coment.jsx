@@ -83,8 +83,8 @@ export default function Coment() {
   return (
     <div className="bg-gray-300">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center py-10">
-          <p className="text-5xl">What client says about us</p>
+        <div className="flex flex-col md:flex-row justify-between items-center py-10">
+          <p className="text-3xl md:text-5xl">What client says about us</p>
           <div className="flex gap-3">
             <button
               onClick={prev}
@@ -107,7 +107,7 @@ export default function Coment() {
           </div>
         </div>
 
-        <div className="w-full flex gap-4 py-10 justify-center">
+        <div className="w-full flex flex-col items-center md:flex-row gap-4 py-10 justify-center">
           {visibleCards.map(({ id, text, name, role, avatar }) => (
             <div
               key={id}

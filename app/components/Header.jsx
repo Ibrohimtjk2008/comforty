@@ -15,7 +15,7 @@ export default function Header() {
     <>
       <div className="bg-gray-800">
         <div className="container mx-auto">
-          <div className="py-2 flex justify-between items-center">
+          <div className="py-2 flex  md:justify-between items-center">
             <div className="flex gap-2">
               <Image src={check} alt="error"></Image>
               <p className="text-white">Free shipping on all orders over $50</p>
@@ -33,13 +33,13 @@ export default function Header() {
       </div>
       <div className="bg-gray-200">
         <div className="container mx-auto">
-          <div className="py-6 flex items-center justify-between">
+          <div className="py-6 flex flex-col gap-5 md:flex-row items-center justify-between">
             <Image src={logo} alt="error"></Image>
             <div className="relative">
               <input
                 type="text"
                 placeholder="Search here..."
-                className="w-sm bg-white rounded-md px-4 py-3"
+                className="w-80 md:w-sm bg-white rounded-md px-4 py-3"
               />
               <Image
                 className="absolute right-3 top-1/2 -translate-y-1/2"
@@ -47,7 +47,7 @@ export default function Header() {
                 alt="error"
               ></Image>
             </div>
-            <div className="flex gap-3">
+            <div className="flex flex-col md:flex-row gap-3">
               <Link href={"/Card"}>
                 <button className="bg-white rounded-md px-4 py-3 items-center flex gap-2 hover:bg-cyan-500 duration-300">
                   <Image src={buy} alt="error"></Image>
@@ -55,12 +55,12 @@ export default function Header() {
                 </button>
               </Link>
               <Link href={"/favorites"}>
-                <button className=" bg-white rounded-md px-4 py-3 hover:bg-cyan-500 duration-300">
+                <button className=" bg-white rounded-md md:px-4 px-9 py-3 hover:bg-cyan-500 duration-300">
                   <Image src={heart} alt="error"></Image>
                 </button>
               </Link>
               <Link href={"/Login"}>
-                <button className=" bg-white rounded-md px-4 py-3 hover:bg-cyan-500 duration-300">
+                <button className=" bg-white rounded-md md:px-4 px-10 py-3 hover:bg-cyan-500 duration-300">
                   <Image src={people} alt="error"></Image>
                 </button>
               </Link>
@@ -69,8 +69,8 @@ export default function Header() {
         </div>
       </div>
       <div className="border-b-2 border-gray-300">
-        <div className="container mx-auto py-4 flex items-center justify-between">
-          <div className="flex items-center gap-7">
+        <div className="container mx-auto py-4 flex flex-col gap-5 md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center gap-7">
             <button>
               <div className="flex gap-3 items-center border border-gray-300 rounded-md px-5 py-3 hover:bg-cyan-500 duration-300">
                 <Image src={menu} alt="error"></Image>
@@ -78,10 +78,10 @@ export default function Header() {
               </div>
             </button>
 
-            <ul className="flex gap-8">
+            <ul className="flex flex-col md:flex-row gap-8">
               <li>
                 <Link
-                  href={"#"}
+                  href={"./"}
                   className="text-gray-500 text-lg hover:text-green-600 transition-colors duration-200"
                 >
                   Home

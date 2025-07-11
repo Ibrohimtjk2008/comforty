@@ -34,7 +34,7 @@ export default function CartPage() {
   return (
     <>
       <Header />
-      <main className="container mx-auto py-10">
+      <main className="container mx-auto py-10 px-10 md:px-0">
         <h1 className="text-5xl mb-8">Cart</h1>
         {cart.length === 0 ? (
           <p>Корзина пуста.</p>

@@ -22,7 +22,7 @@ export default function Favorite() {
   return (
     <>
       <Header />
-      <main className="container mx-auto py-10">
+      <main className="container mx-auto py-10 px-10 md:px-0">
         <h1 className="text-5xl mb-8">Favorite</h1>
         {favorites.length === 0 ? (
           <p>Вы ещё ничего не добавили в избранное.</p>

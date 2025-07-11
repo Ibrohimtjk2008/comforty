@@ -12,7 +12,7 @@ export default function Footer() {
     <>
       <div className="border-y-2 border-gray-400 my-8">
         <div className="container mx-auto">
-          <div className="flex justify-between py-10 w-full">
+          <div className="flex flex-col items-center gap-5 md:flex-row justify-between py-10 w-full">
             <div className="w-1/4 flex flex-col gap-5">
               <Image src={logo} alt="error"></Image>
               <p className="text-sm text-gray-400">
@@ -128,7 +128,7 @@ export default function Footer() {
                 </li>
               </ol>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex items-center md:flex flex-col gap-4">
               <p className="text-gray-400">Newsletter</p>
               <div className="flex gap-4">
                 <input
@@ -140,7 +140,7 @@ export default function Footer() {
                   <p className="text-white">Subscribe</p>
                 </button>
               </div>
-              <p className="text-gray-400">
+              <p className="px-5 md:px-0 text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 <br /> Nullam tincidunt erat enim.
               </p>

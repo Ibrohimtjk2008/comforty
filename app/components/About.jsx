@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <div className="container mx-auto rounded-lg shadow-2xl ">
-        <div className="flex justify-between py-10 px-8">
+        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between py-10 px-8">
           <div className="flex gap-2">
             <Image src={box} alt="error"></Image>
             <div>
@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between py-8 container mx-auto items-center">
+      <div className="flex flex-col  md:flex-row md:justify-between py-8 container mx-auto items-center">
         <Image src={Logo1} alt="error"></Image>
         <Image src={Logo2} alt="error"></Image>
         <Image src={Logo3} alt="error"></Image>

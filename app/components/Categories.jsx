@@ -39,8 +39,8 @@ export default function Categories() {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <p className="text-5xl">Top Categories</p>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="text-3xl md:text-5xl">Top Categories</p>
           <div className="flex gap-3">
             <button
               onClick={slideLeft}
@@ -57,7 +57,7 @@ export default function Categories() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden py-10">
+        <div className="px-5 md:px-0 relative overflow-hidden py-10 ">
           <div className="flex gap-4">
             {cards.map((card, i) => (
               <div key={i} className="relative flex-shrink-0 mx-2" style={{ minWidth: 340 }}>

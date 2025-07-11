@@ -133,7 +133,7 @@ export default function Featured_Products() {
 
   return (
     <div className="container mx-auto py-10">
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+      <div className="flex flex-col md:flex-row md:px-5 justify-between items-center mb-6">
         <p className="text-2xl md:text-5xl">Featured Products</p>
         <div className="flex gap-3">
           <button
@@ -159,7 +159,7 @@ export default function Featured_Products() {
         </div>
       </div>
 
-      <div className="flex justify-center gap-6 overflow-hidden transition duration-300">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-6 overflow-hidden transition duration-300">
         {currentItems.map(({ id, image, title, price, state }) => (
           <ProductCard
             key={id}

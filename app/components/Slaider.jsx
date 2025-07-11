@@ -42,13 +42,13 @@ export default function Slaider() {
   const slide = slides[currentIndex];
 
   return (
-    <div className="mx-15 bg-gray-200 relative h-auto md:h-[800px] rounded-b-4xl">
+    <div className="md:mx-15 bg-gray-200 relative h-auto lg:h-[800px] rounded-b-4xl">
       <div className="flex justify-between items-center px-20 absolute top-0 w-full h-full z-10">
         <button
           onClick={prev}
           className="bg-white rounded-full p-2 hover:bg-cyan-500 transition-colors duration-300"
         >
-          <div className="w-3 h-3 md:w-12 md:h-12 relative">
+          <div className="w-3 h-3 md:w-5 md:h-5 lg:w-12 lg:h-12 relative">
             <Image src={Rightt} alt="left" fill className="object-contain" />
           </div>
         </button>
@@ -56,17 +56,17 @@ export default function Slaider() {
           onClick={next}
           className="bg-white rounded-full p-2 hover:bg-cyan-500 transition-colors duration-300"
         >
-          <div className="w-3 h-3 md:w-12 md:h-12 relative">
+          <div className="w-3 h-3 md:w-5 md:h-5 lg:w-12 lg:h-12 relative">
             <Image src={Right} alt="Right" fill className="object-contain" />
           </div>
         </button>
       </div>
 
       <div className="px-32 flex justify-between">
-        <div className="py-5 md:py-68 md:pl-10 flex flex-col gap-6">
+        <div className="py-5 lg:py-68 lg:pl-10 flex flex-col gap-6">
           <div>
-            <p className="text-sm md:text-xl">{slide.welcome}</p>
-            <p className="text-xl md:text-6xl whitespace-pre-line">
+            <p className="text-sm md:text-sm lg:text-xl">{slide.welcome}</p>
+            <p className="text-xl md:text-xl lg:text-6xl whitespace-pre-line">
               {slide.title}
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function Slaider() {
           </Link>
         </div>
         <div>
-          <div className="hidden md:block w-full h-[500] relative">
+          <div className="hidden md:hidden lg:block w-full h-[500] relative">
             <Image src={slide.bg} alt="error" />
             <div className="absolute top-14 right-5 z-10">
               <Image src={slide.discount} alt="discount" />

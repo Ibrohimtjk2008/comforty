@@ -39,7 +39,7 @@ export default function Our_Products() {
             </ol>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row justify-between">
+        <div className="grid grid-cols-1  place-items-center md:grid-cols-2 lg:grid-cols-4 justify-between">
           <ProductCard
             id={1}
             image={image1}
@@ -69,7 +69,7 @@ export default function Our_Products() {
             state={"Naw"}
           ></ProductCard>
         </div>
-        <div className="flex flex-col items-center md:flex-row justify-between">
+        <div className="grid grid-cols-1  place-items-center md:grid-cols-2 lg:grid-cols-4 justify-between">
           <ProductCard
             id={5}
             image={image5}

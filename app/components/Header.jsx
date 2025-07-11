@@ -33,7 +33,7 @@ export default function Header() {
       </div>
       <div className="bg-gray-200">
         <div className="container mx-auto">
-          <div className="py-6 flex flex-col gap-5 md:flex-row items-center justify-between">
+          <div className="py-6 md:flex-col  gap-5 lg:flex-row  flex flex-col xl:flex-row items-center justify-between">
             <Image src={logo} alt="error"></Image>
             <div className="relative">
               <input
@@ -69,8 +69,8 @@ export default function Header() {
         </div>
       </div>
       <div className="border-b-2 border-gray-300">
-        <div className="container mx-auto py-4 flex flex-col gap-5 md:flex-row items-center justify-between">
-          <div className="flex flex-col md:flex-row items-center gap-7">
+        <div className="container mx-auto py-4 flex flex-col gap-5 md:flex-col lg:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-col lg:flex-row items-center gap-7">
             <button>
               <div className="flex gap-3 items-center border border-gray-300 rounded-md px-5 py-3 hover:bg-cyan-500 duration-300">
                 <Image src={menu} alt="error"></Image>

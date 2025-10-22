@@ -107,7 +107,7 @@ export default function Featured_Products() {
       } else {
         setCardsPerSlide(4);
       }
-      setCurrentIndex(0); // сбрасываем на первый слайд при смене ширины
+      setCurrentIndex(0);
     }
 
     handleResize();
